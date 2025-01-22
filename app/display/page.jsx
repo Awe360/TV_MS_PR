@@ -70,7 +70,7 @@ const ValidatorPage = () => {
 
     validateAdminOrDeviceId();
   }, [router]);
-  console.log("device type:",deviceType);
+  // console.log("device type:",deviceType);
 
   const handleIdSubmit = async (e) => {
     e.preventDefault();

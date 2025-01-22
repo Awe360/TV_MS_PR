@@ -21,7 +21,7 @@ const HomePage = () => {
   useEffect(() => {
     const unsubscribe = onSnapshot(collection(dataBase, 'registeredTV'), (snapshot) => {
       const tvs = snapshot.docs.map(doc => doc.data().ID);
-      console.log("awoke:",tvs.length)
+      // console.log("awoke:",tvs.length)
       setTvOptions(tvs);
       setTemp(tvs.length);
       // dispatch(setTvCount(tvs.length));
